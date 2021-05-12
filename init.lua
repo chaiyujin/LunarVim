@@ -16,11 +16,14 @@ require('lv-telescope')
 require('lv-gitsigns')
 require('lv-treesitter')
 require('lv-autopairs')
-require('lv-rnvimr')
+-- require('lv-rnvimr')
 require('lv-which-key')
 
 -- TODO is there a way to do this without vimscript
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
+
+-- my terminal plugin
+vim.cmd('source ~/.config/nvim/vimscript/term.vim')
 
 -- LSP
 require('lsp')

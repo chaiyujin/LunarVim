@@ -59,9 +59,10 @@ return require("packer").startup(
         use {"windwp/nvim-ts-autotag", opt = true}
 
         -- Explorer
-        use {"kyazdani42/nvim-tree.lua", opt = true}
+        use {"chaiyujin/nvim-tree.lua", opt = true}
+        -- use {"kyazdani42/nvim-tree.lua", opt = true}
         -- TODO remove when open on dir is supported by nvimtree
-        use "kevinhwang91/rnvimr"
+        -- use "kevinhwang91/rnvimr"
 
         -- use {'lukas-reineke/indent-blankline.nvim', opt=true, branch = 'lua'}
         use {"lewis6991/gitsigns.nvim", opt = true}
