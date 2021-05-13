@@ -20,8 +20,8 @@ O.timeoutlen = 100
 
 -- if you don't want all the parsers change this to a table of the ones you want
 -- O.treesitter.ensure_installed = "all"
-O.treesitter.ensure_installed = {"cpp", "python", "json", "toml", "yaml"}
-O.treesitter.ignore_install = {"haskell"}
+O.treesitter.ensure_installed = {"cpp", "c", "javascript", "html", "css", "python", "lua", "json", "toml", "rust"}
+O.treesitter.ignore_install = {"haskell", "yaml"}  -- "yaml" don't support multi-lines []
 O.treesitter.highlight.enabled = true
 
 

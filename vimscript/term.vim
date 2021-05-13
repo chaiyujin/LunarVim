@@ -14,7 +14,6 @@ endif
 
 augroup AutoStartInsertTerminal
   autocmd!
-  autocmd TermOpen * startinsert
   autocmd BufEnter term://* startinsert!
 augroup END
 
@@ -59,6 +58,7 @@ function! ToggleTerminal(terminal_ref)
     set nobuflisted
     set nonumber
     set norelativenumber
+    execute "startinsert!"
     let {a:terminal_ref}.loaded = v:true
     let {a:terminal_ref}.termbufferid = bufnr('')
     let {a:terminal_ref}.termwinid = win_getid()
